@@ -1,0 +1,175 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Variables and Fonts */
+
+:root {
+    --bg-blue: #2c698d;
+    --bg-dark-blue: #272643;
+    --bg-gray: #ffffff;
+    --bg-middle-blue: #bae8e8;
+    --bg-light-blue: #bae8e8;
+    font-family: "Heebo";
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url("fonts/Heebo-VariableFont_wght.ttf");
+}
+
+/* Grid Layout */
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    font-family: "Heebo";
+}
+
+/* Header */
+
+.header {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--bg-dark-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2.4rem;
+    justify-items: center;
+}
+
+.pageTitle {
+    color: var(--bg-gray);
+    font-size: 2rem;
+}
+
+.createBook {
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.createBook:hover {
+    background-color: var(--bg-middle-blue);
+    cursor: pointer;
+}
+
+/* Content and Cards */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--bg-middle-blue);
+    height: 18rem;
+    width: 22rem;
+    border-radius: 2.6rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+
+.bookTitle {
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+.read {
+    background-color: var(--bg-blue);
+    color: var(--bg-gray);
+    height: 2.6rem;
+    border-radius: .8rem;
+    padding-top: .4rem;
+}
+
+.delButton {
+    background-color: var(--bg-blue);
+    color: var(--bg-gray);
+    border: none;
+    height: 2.6rem;
+    border-radius: 0.8rem;
+}
+
+.delButton:hover {
+    background-color: var(--bg-dark-blue);
+    cursor: pointer;
+}
+
+/* Form Styling */
+
+.newBookForm {
+    display: none;
+    position: fixed;
+    height: 28rem;
+    width: 24rem;
+    top: calc(50vh - 14rem);
+    left: calc(50vw - 12rem);
+    background-color: var(--bg-blue);
+    padding: 1.4rem;
+    border-radius: 1.6rem;
+}
+
+.formContainer {
+    background-color: var(--bg-dark-blue);
+    height: 25.2rem;
+    border-radius: 1.2rem;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0.6rem;
+    gap: 1rem;
+    color: var(--bg-gray);
+}
+
+.nonRadio {
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.submitButton {
+    height: 2rem;
+    width: 8rem;
+    justify-self: center;
+    border: none;
+    border-radius: .4rem;
+    background-color: var(--bg-gray);
+    color: var(--bg-dark-blue);
+}
+
+.submitButton:hover {
+    background-color: var(--bg-middle-blue);
+    cursor: pointer;
+}
+
+
+

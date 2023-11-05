@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="pageTitle">Library</h1>
+            <button class="createBook">New Book</button>
+        </div>
+        <div class="content">
+        </div>
+    
+
+        <div class="newBookForm">
+            <div class="formContainer">
+                <form method="" id="form1">
+                    <label for="newTitle" class="nonRadio">Book Title
+                        <input type="text" name="newTitle" id="newTitle">
+                    </label>
+                    <label for="newAuthor" class="nonRadio">Author
+                        <input type="text" name="newAuthor" id="newAuthor">
+                    </label>
+                    <label for="newBookPages" class="nonRadio">How many pages?
+                        <input type="number" name="newBookPages" id="newBookPages">
+                    </label>
+                    <fieldset>
+                        <legend>Have you read this book?</legend>
+                        <ul class="haveReadList">
+                            <li>
+                                <label for="haveReadTrue">
+                                    <input type="radio" name="haveRead" id="haveReadTrue" value="true" checked>
+                                    Yes, I've read it.
+                                </label>
+                            </li>
+                            <li>
+                                <label for="haveReadFalse">
+                                    <input type="radio" name="haveRead" id="haveReadFalse" value="false" >
+                                    No, not yet!
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="submitButton">Add Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="functions.js"></script>
+</html>
